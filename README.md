@@ -1,4 +1,4 @@
 # MusicFixy
 
 
-!(MockUp)[https://github.com/beautifulBeast/MusicFixy/blob/master/Algorythm/Mockup.png]
+!(MockUp)[https://github.com/beautifulBeast/MusicFixy/blob/master/Algorythm/Mockup.png?raw=true]
