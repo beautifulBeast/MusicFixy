@@ -48,7 +48,7 @@
     if ([segue.identifier isEqual:@"pushToDetail"]) {
         //do this
         PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
-        //playlistDetailViewController.labelInfo = @"Ya Minx";
+        //ireration 1 -> playlistDetailViewController.labelInfo = @"Push Complete";
         playlistDetailViewController.playlist = [[Playlist alloc] initWithIndex:0];
     }
     
