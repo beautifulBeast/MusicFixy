@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D00B27D1A87D763008BB1FB /* Mockup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D00B27C1A87D763008BB1FB /* Mockup.png */; };
 		6D42F4361A82D479003EC249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42F4351A82D479003EC249 /* main.m */; };
 		6D42F4391A82D479003EC249 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42F4381A82D479003EC249 /* AppDelegate.m */; };
 		6D42F43C1A82D479003EC249 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42F43B1A82D479003EC249 /* PlaylistMasterViewController.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D00B27C1A87D763008BB1FB /* Mockup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mockup.png; sourceTree = "<group>"; };
 		6D42F4301A82D479003EC249 /* Algorythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D42F4341A82D479003EC249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D42F4351A82D479003EC249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		6D42F4331A82D479003EC249 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D00B27C1A87D763008BB1FB /* Mockup.png */,
 				6D42F4371A82D479003EC249 /* AppDelegate.h */,
 				6D42F4381A82D479003EC249 /* AppDelegate.m */,
 				6D42F4341A82D479003EC249 /* Info.plist */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D00B27D1A87D763008BB1FB /* Mockup.png in Resources */,
 				6D42F43F1A82D479003EC249 /* Main.storyboard in Resources */,
 				6D42F4441A82D479003EC249 /* LaunchScreen.xib in Resources */,
 				6D42F4411A82D479003EC249 /* Images.xcassets in Resources */,
@@ -457,6 +461,7 @@
 				6D42F4551A82D479003EC249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D42F4561A82D479003EC249 /* Build configuration list for PBXNativeTarget "AlgorythmTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +470,7 @@
 				6D42F4581A82D479003EC249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
