@@ -21,12 +21,19 @@
     
     self.navigationItem.title = @"Playlists";
 
-    //image container set-up
-    //self.playlistImageView0.layer.cornerRadius = 5;
-    
-    //Playlist *playlist= [[Playlist alloc] initWithIndex:0];
-    //self.playlistImageView0.image = playlist.playlistIcon;
+    for (NSUInteger index = 0; index < self.playlistImageViews.count; index++) {
+        NSLog(@"self.playlistImageViews.count:%lu", self.playlistImageViews.count);
+        //iterate through playlist array and populate icons into imageviews
+        //access playlist
+        Playlist *playlist = [[Playlist alloc] initWithIndex:index];
+        
+        //store selected instance, (via outletted array) in an imageview instance
+        UIImageView *playlistImageView = self.playlistImageViews[index];
+        NSLog(@"index:%lu ", (unsigned long)index);
 
+        playlistImageView.image = playlist.playlistIcon;
+        playlistImageView.backgroundColor = playlist.backgroundColor;
+            }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,10 +43,18 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"pushToDetail"]) {
-        //do this
-        PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
-        //ireration 1 -> playlistDetailViewController.labelInfo = @"Push Complete";
-        playlistDetailViewController.playlist = [[Playlist alloc] initWithIndex:0];
+        
+            //track the imageview that triggered the segue
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        
+        if ([self.playlistImageViews containsObject:playlistImageView]) {
+            //track index of that imageview (which will give you the index of the corresponding playlist info
+            NSUInteger index = [self.playlistImageViews indexOfObject:playlistImageView];
+            
+            PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
+            
+            playlistDetailViewController.playlist = [[Playlist alloc] initWithIndex:index];
+        }
     }
     
 }

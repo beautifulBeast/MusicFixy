@@ -23,10 +23,6 @@
     //iteration 1 -> self.detailLabel.text = self.labelInfo;
     //iteration 2 -> self.detailLabel.text = self.playlist.playlistTitle;
     
-//    for (NSUInteger index = 0; index < self.TOBECREATEDviews.count; index++) {
-//        //iterate through selected playlist array and populate info
-//    }
-    
     if (self.playlist) {
         self.playlistCoverImage.image = self.playlist.playlistIconLarge;
         self.playlistCoverImage.backgroundColor = self.playlist.backgroundColor;

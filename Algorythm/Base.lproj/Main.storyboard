@@ -103,7 +103,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="VAl-dC-WwO"/>
                     <connections>
-                        <outletCollection property="playlistImageViews" destination="33M-lo-Ulh" id="3nM-li-Cqq"/>
+                        <outletCollection property="playlistImageViews" destination="2Sb-KZ-v8v" id="cSd-R3-tM8"/>
+                        <outletCollection property="playlistImageViews" destination="nmR-tE-FL7" id="Njt-q0-Fz6"/>
+                        <outletCollection property="playlistImageViews" destination="33M-lo-Ulh" id="awb-Pv-z2e"/>
+                        <outletCollection property="playlistImageViews" destination="bRI-rT-fWd" id="vX0-mR-bjs"/>
+                        <outletCollection property="playlistImageViews" destination="w1R-fv-rLF" id="uYO-cM-Oax"/>
+                        <outletCollection property="playlistImageViews" destination="gDb-lJ-sO3" id="7ET-la-0tt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
