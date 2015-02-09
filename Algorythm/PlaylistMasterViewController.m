@@ -18,24 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.aButton setTitle:@"Press Me!" forState:UIControlStateNormal];
-    self.navigationItem.title = @"Playlist";
+    
+    self.navigationItem.title = @"Playlists";
 
     //image container set-up
-    self.playlistImageView0.layer.cornerRadius = 5;
-    //button set-up
-    self.aButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-    //moves frame out in relation to text content
-    self.aButton.contentEdgeInsets = UIEdgeInsetsMake(0.0f, 30.0f, 0.0f, 30.0f);
-    //dynamic setup 
-    self.aButton.titleLabel.adjustsFontSizeToFitWidth = YES;
-    self.aButton.titleLabel.minimumScaleFactor = 0;
-    self.aButton.layer.cornerRadius = 2;
-    self.aButton.layer.borderWidth = 1;
-    self.aButton.layer.borderColor = [UIColor blueColor].CGColor;
+    //self.playlistImageView0.layer.cornerRadius = 5;
     
-    Playlist *playlist= [[Playlist alloc] initWithIndex:0];
-    self.playlistImageView0.image = playlist.playlistIcon;
+    //Playlist *playlist= [[Playlist alloc] initWithIndex:0];
+    //self.playlistImageView0.image = playlist.playlistIcon;
 
 }
 
@@ -52,9 +42,9 @@
         playlistDetailViewController.playlist = [[Playlist alloc] initWithIndex:0];
     }
     
-    
-    
-    
+}
+- (IBAction)iconTap:(id)sender {
+    [self performSegueWithIdentifier:@"pushToDetail" sender:sender];
 }
 
 @end

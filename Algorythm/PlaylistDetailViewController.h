@@ -18,6 +18,17 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *playlistDescription;
 
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel0;
+
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel1;
+
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel2;
+
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel3;
+
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel4;
+
 @property (strong, nonatomic) Playlist *playlist;
+
 
 @end
